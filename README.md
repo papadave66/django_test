@@ -5,7 +5,7 @@ A homework for python class
 ## 这个都能干啥
 本项目可以方便你学习django 从数据库显示到前端的过程
 
-###如何使用
+### 如何使用
 
 1. `git clone` 本项目
 2. 安装`python`，`django`等
