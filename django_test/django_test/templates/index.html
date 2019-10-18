@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>school information</title>
+	</head>
+
+	<body>
+		<h3>student table</h3>
+		<table border="1">
+			<tr>
+				<th>student id</th>
+				<th>student name</th>
+				<th>student gender</th>
+				<th>student birth</th>
+				<th>student address</th>
+			</tr>
+			{% for student in student_list %}
+			<tr>
+				<td>{{ student.student_id }}</td>
+				<td>{{ student.student_name }}</td>
+				<td>{{ student.student_sex }}</td>
+				<td>{{ student.student_birth }}</td>
+				<td>{{ student.student_address}}</td>
+			</tr>
+			{% endfor %}
+		</table>
+
+		<h3>teacher table</h3>
+		<table border='1'>
+			<tr>
+				<th>teacher id</th>
+				<th>teacher name</th>
+				<th>teacher gender</th>
+				<th>teacher birth</th>
+				<th>teacher title</th>
+				<th>teacher work</th>
+			</tr>
+			{% for teacher in teacher_list %}
+			<tr>
+				<td>{{ teacher.teacher_id }}</td>
+				<td>{{ teacher.teacher_name }}</td>
+				<td>{{ teacher.teacher_sex }}</td>
+				<td>{{ teacher.teacher_birth }}</td>
+				<td>{{ teacher.teacher_title }}</td>
+				<td>{{ teacher.teacher_work }}</td>
+			</tr>
+			{% endfor %}
+		</table>
+		<h3>course table</h3>
+			<table border='1'>
+					<tr>
+						<th>course id</th>
+						<th>course name</th>
+						<th>course time</th>
+						<th>course score</th>
+						<th>course book</th>
+						<th>course type info</th>
+					</tr>
+					{% for course in course_list %}
+					<tr>
+							<td>{{ course.course_id }}</td>
+							<td>{{ course.course_name }}</td>
+							<td>{{ course.course_time }}</td>
+							<td>{{ course.course_score }}</td>
+							<td>{{ course.course_book }}</td>
+							<td>{{ course.course_type_info }}</td>
+						</tr>
+						{% endfor %}
+			</table>
+		</table>
+	</body>
+</html>
